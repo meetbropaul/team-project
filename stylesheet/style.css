@@ -228,18 +228,16 @@ a:hover {
   margin: 0rem;
   margin-bottom: 5rem;
   height: 58rem;
-  /* border: 2px solid; */
 }
 
 .ticketAndPassesContents .contentThumbnail:last-child {
   width: 66%;
 }
 
-.ticketTypes{
+.ticketTypes {
   display: flex;
   flex-wrap: wrap;
   height: 12%;
-  /* margin-bottom: 0.5rem; */
 }
 
 .ticketTypes * {
@@ -247,12 +245,10 @@ a:hover {
   text-align: center;
   margin-bottom: 0.2rem;
   padding-top: 0.5rem;
-  /* border-radius: 10px; */
 }
 
 .ticketTypes h3 {
   width: 100%;
-  /* border: 2px solid; */
   color: white;
   background-color: #211c5b;
 }
@@ -264,13 +260,16 @@ a:hover {
 
 .ticketTypes h4:last-child {
   border-left: none;
-  /* border-top: none; */
-  /* border-bottom: none; */
+}
+
+.ticketTypes span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .ticketAndPassesContents img {
   width: 100%;
-  /* height: 25rem; */
   height: 43%;
 }
 
@@ -283,17 +282,7 @@ a:hover {
   margin-bottom: 0;
 }
 
-
 .ticketAndPassesContents a {
   display: block;
   text-align: center;
-
-  /* margin-bottom: 5rem */
 }
-
-/* .test {
-  display: block;
-  background-color: red;
-  font-size: 1.3rem;
-  width: 50%;
-} */
