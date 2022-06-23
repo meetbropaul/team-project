@@ -202,6 +202,36 @@ a:hover {
   padding: 2rem;
 }
 
+/* Defining CSS rule specific to Explore Page */
+
+.explore-container {
+  /* margin: 80px; */
+}
+
+.explore-items {
+  display: grid;
+  background: #211c5b22;
+  grid-template-columns: auto auto auto;
+  /* padding: 10px; */
+  width: fit-content;
+}
+
+.explore-grid-item {
+  padding: 10px;
+  margin: 5px;
+}
+
+.explore-grid-item .img {
+}
+
+.article-card-title,
+.article-card-read-more {
+  background: #211c5b;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+
 /* Defining CSS rule specific to Tickets and Passes Page */
 
 .ticketLabel h2 {
