@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
 }
+
 header {
   background-color: #211c5b;
   height: 5rem;
@@ -88,6 +89,7 @@ a:hover {
   height: 10rem;
   background-color: #11aad4;
   padding-top: 2rem;
+  overflow: hidden;
 }
 
 .container {
@@ -95,6 +97,7 @@ a:hover {
   width: 180%;
   overflow: hidden;
   position: relative;
+  text-overflow: clip;
 }
 
 .dashboard h1 {
@@ -102,13 +105,10 @@ a:hover {
   width: 100%;
   height: 100%;
   text-align: left;
-  transform: translateX(20.5%);
   animation: scroll-text 30s linear;
   animation-iteration-count: infinite;
-  animation-delay: 3s;
   color: red;
-  /* color: cornsilk;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
 @keyframes scroll-text {
@@ -123,7 +123,6 @@ a:hover {
 .dashboard span {
   margin-left: 25rem;
 }
-
 
 /* Home page content section CSS */
 .homepageContents {
@@ -216,7 +215,6 @@ a:hover {
   background: none !important;
   width: 100%;
 }
-
 
 /* Defining CSS rule specific to Tickets and Passes Page */
 
