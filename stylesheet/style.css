@@ -108,7 +108,7 @@ a:hover {
   animation: scroll-text 30s linear;
   animation-iteration-count: infinite;
   color: red;
-  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  text-shadow: -2px 0 cornsilk, 0 2px cornsilk, 2px 0 cornsilk, 0 -2px cornsilk;
 }
 
 @keyframes scroll-text {
