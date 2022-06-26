@@ -1,5 +1,4 @@
 * {
-  /* https://www.youtube.com/watch?v=PwWHL3RyQgk */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,6 +17,16 @@ body {
   color: #211c5b;
   border: none;
   cursor: pointer;
+}
+
+#card-buy-cta {
+  height: 80px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fcaf1e;
+  color: #211c5b;
+  border: none;
 }
 
 .nav-links li,
@@ -126,15 +135,26 @@ header {
 }
 
 .main-content-container {
-  /* background: #f0f4fb; */
   margin: 2rem auto;
   max-width: calc(100% - 80px);
+}
+
+.main-content-container section {
+  margin-top: 30px;
+  margin-bottom: 70px;
 }
 
 .home-explore-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
+}
+
+.home-tickets-container {
+  margin: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 18rem;
 }
 
 .article-image {
@@ -172,9 +192,29 @@ header {
   text-decoration: none;
 }
 
+.article-content .card-type {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #211c5b;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0px;
+}
+
 .article-content .card-subtitle {
   margin: 1rem 0;
   color: #9ba2ff;
+}
+
+.article-content .card-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #207507;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 .article-card .card-excerpt {
@@ -182,4 +222,74 @@ header {
   line-height: 1.5rem;
   color: #706c8f;
   margin: 0;
+}
+
+/* TO-DO: UPDATE THIS A BIT */
+/* https://codepen.io/jeremycaris/pen/zYOorR */
+.home-testimonial-section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #1a1a1a;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  text-align: center;
+  background: #757f9a;
+  background: -webkit-linear-gradient(to left, #d7dde8, #757f9a);
+  background: linear-gradient(to left, #d7dde8, #757f9a);
+}
+
+.home-testimonial-container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.testimonial blockquote {
+  margin: 10px 10px 0;
+  background: #efefef;
+  padding: 20px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  color: #757f9a;
+  font-style: normal;
+}
+
+.testimonial blockquote:before {
+  top: 0;
+  left: 10px;
+}
+
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
+}
+
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+  margin: 0 0 0 60px;
+}
+
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.testimonial .stars {
+  font-size: 25px;
 }
