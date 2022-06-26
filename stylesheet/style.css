@@ -73,7 +73,7 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #9ba2ff;
+  color: #4754ff;
 }
 
 .hero {
@@ -128,7 +128,7 @@ header {
 
 .card-title {
   font-family: "Lustria", serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 100%;
   font-size: 22px;
   line-height: 1.5;
@@ -206,7 +206,7 @@ header {
 
 .article-content .card-subtitle {
   margin: 1rem 0;
-  color: #9ba2ff;
+  color: #4754ff;
 }
 
 .article-content .card-price {
@@ -349,7 +349,7 @@ footer {
 }
 
 .footer-column a {
-  color: #9ba2ff;
+  color: #4754ff;
 }
 
 .footer-legal {
@@ -368,7 +368,7 @@ footer {
 }
 
 .social-media a {
-  background: #9ba2ff;
+  background: #4754ff;
   color: #211c5b;
   font-weight: 800;
   width: 40px;
