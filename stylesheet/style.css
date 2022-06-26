@@ -10,6 +10,7 @@ html {
 body {
   margin: 0;
 }
+
 header {
   background-color: #211c5b;
   height: 5rem;
@@ -57,16 +58,22 @@ header a {
 
 nav {
   clear: both;
-  margin-top: 2.5rem;
+  width: 98%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0rem;
 }
 
 nav li {
   display: inline-block;
-  width: 33%;
-}
-
-li:last-child a {
-  margin-left: 4rem;
 }
 
 nav a {
@@ -79,23 +86,24 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Animation Section CSS */
 .dashboard {
   width: 98%;
   margin-left: 0.5rem;
-  margin-top: 2rem;
   margin-bottom: 0;
   height: 10rem;
   background-color: #11aad4;
-  color: #990012;
+  color: red;
   padding-top: 2rem;
+  overflow: hidden;
 }
 
 .container {
   height: 50%;
-  width: 150%;
+  width: 180%;
   overflow: hidden;
-  /* background-color: #990012; */
   position: relative;
+  text-overflow: clip;
 }
 
 .dashboard h1 {
@@ -105,14 +113,16 @@ a:hover {
   text-align: left;
   animation: scroll-text 30s linear;
   animation-iteration-count: infinite;
+  color: red;
+  text-shadow: -2px 0 cornsilk, 0 2px cornsilk, 2px 0 cornsilk, 0 -2px cornsilk;
 }
 
 @keyframes scroll-text {
   0% {
-    transform: translateX(80%);
+    transform: translateX(54.5%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-80%);
   }
 }
 
@@ -120,30 +130,47 @@ a:hover {
   margin-left: 25rem;
 }
 
+/* Home page content section CSS */
 .homepageContents {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 3rem;
-  margin-left: 0.8rem;
+  justify-content: space-between;
+  width: 98%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.contentThumbnail {
-  width: 47%;
-  margin-right: 2rem;
-  margin-bottom: 3rem;
+.homepageContents .contentThumbnail {
+  width: 33%;
+  height: 45rem;
+  margin-bottom: 2rem;
 }
 
 .homepageContents div:last-child {
-  width: 98%;
+  width: 66%;
 }
 
-.contentThumbnail img {
+.homepageContents .contentThumbnail img {
   width: 100%;
-  height: 50rem;
+  height: 56%;
 }
 
-.contentThumbnail p {
+.homepageContents .contentThumbnailHeading {
+  height: 14%;
+}
+
+.homepageContents .contentThumbnailHeading h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.homepageContents .contentThumbnailHeading h3 {
+  margin: 0;
+}
+.homepageContents .contentThumbnail p {
   font-size: 1.2rem;
+  height: 18%;
 }
 
 .contentThumbnail a {
@@ -156,16 +183,20 @@ a:hover {
 }
 
 .contentThumbnail a:hover {
-  background-color: #990012;
+  background-color: #c43041;
 }
 
+/* Contact Section CSS */
 #contactSection {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 4rem;
   background-color: #211c5b;
   color: white;
   font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 #contactSection * {
@@ -189,18 +220,189 @@ a:hover {
 .mapouter {
   position: relative;
   text-align: right;
-  /* height: 1000px; */
   width: 100%;
 }
 
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  /* height: 1000px; */
   width: 100%;
+address span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  padding-top: 1rem;
+}
+
+/* Map section CSS */
+#mapSection > h2 {
+  margin-left: 0.8rem;
+  margin-bottom: 0;
+  padding: 1rem;
 }
 
 .direction {
   font-size: 1.2rem;
   padding: 2rem;
+}
+
+/* Defining CSS rule specific to Tickets and Passes Page */
+
+.ticketLabel h2 {
+  width: 98%;
+  margin: auto;
+  margin-top: 3rem;
+/* style for google map  */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+}
+
+/* Defining CSS rule specific to Explore Page */
+
+/*.main-contain-heading shares the same rule as heading in ticket & pass CSS section */
+
+
+  /* class .explore-item share the same rule as class .ticketAndPassesContents */
+
+
+article.explore-grid-item {
+  /* same rule as class .ticketAndPassesContents .contentThumbnail */
+  height: 40rem;
+  margin-bottom: 5rem;
+}
+
+.explore-grid-item img {
+  height: 63%;
+  width: 100%;
+}
+
+.article-card-title,
+.article-card-read-more {
+  background: #211c5b;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+}
+
+.article-card-excerpt {
+  margin-top: 0.3rem;
+  height: 22%;
+}
+
+.article-card-excerpt span:first-child {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.article-card-read-more a {
+  text-decoration: none;
+  color: white;
+}
+
+.article-card-read-more a:hover {
+  text-decoration: underline;
+}
+
+/* Defining CSS rule specific to Tickets and Passes Page */
+
+.heading h2,
+.main-content-heading {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0;
+  background-color: #11aad4;
+  color: red;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.ticketAndPassesContents,
+.explore-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.3rem 0.6rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.ticketAndPassesContents .contentThumbnail,
+.explore-grid-item {
+  width: 33%;
+  margin: 0rem;
+  margin-bottom: 0rem;
+  height: 58rem;
+}
+
+.ticketAndPassesContents .contentThumbnail:last-child {
+  width: 66%;
+}
+
+.ticketTypes {
+  display: flex;
+  flex-wrap: wrap;
+  height: 12%;
+}
+
+.ticketTypes * {
+  margin-top: 0.08rem;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  padding-top: 0.5rem;
+}
+
+.ticketTypes h3 {
+  width: 100%;
+  color: white;
+  background-color: #211c5b;
+}
+
+.ticketTypes h4 {
+  width: 50%;
+  border: 2px solid;
+}
+
+.ticketTypes h4:last-child {
+  border-left: none;
+}
+
+.ticketTypes span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.ticketAndPassesContents img {
+  width: 100%;
+  height: 43%;
+}
+
+.ticketAndPassesContents .heading {
+  height: 10%;
+}
+
+.ticketAndPassesContents ul {
+  height: 20%;
+  margin-bottom: 0;
+}
+
+.ticketAndPassesContents a {
+  display: block;
+  text-align: center;
 }
