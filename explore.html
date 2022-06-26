@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Adventure Park - Explore</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
       name="description"
       content="Visit Adventure Theme Park to have the best
-    time of your life. Ranked #1 as the more fun theme park attraction in the
+    time in your life. Ranked #1 as the more fun theme park attraction in the
     world."
     />
     <meta
       name="author"
       content="UoL Web Development Apr 2022 - Team 22 - Tutor Group 4"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="refresh" content="600" />
     <meta
       name="keywords"
-      content="Theme Park attractions rides breaks vacations"
+      content="Adventure Theme Park attractions rides breaks vacations"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Park - Explore</title>
 
     <!-- linking stylesheet -->
-    <link rel="stylesheet" type="text/css" href="stylesheet/style.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
 
     <!-- linking Icons -->
     <script
@@ -35,195 +35,210 @@
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lustria&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <!-- <a href="#main-content">Skip to main content</a> -->
 
-    <!-- Header area -->
     <header>
-      <div class="openingHours">
-        <p>
-          Opening Hours <br />
-          <span>From <time>08:00</time> to <time>22:00</time></span>
-        </p>
+      <img class="logo" src="/images/adventure_park_logo.png" alt="Logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./explore.html">Explore</a></li>
+          <li><a href="./ticketsAndpasses.html">Tickets & Passes</a></li>
+        </ul>
+      </nav>
+      <div class="boton">
+        <a id="book-now-cta" href="#">
+          <button>Book Now</button>
+        </a>
       </div>
-
-      <img src="images/park-logo.png" alt="park-logo" width="75" height="60" />
-      <h1>Adventure Park</h1>
-      <a href="ticketsAndpasses.html">Buy tickets</a>
     </header>
 
-    <!-- Navigation area -->
-    <nav>
-      <ul>
-        <li><a href="index.html">Back to Home Page</a></li>
-        <li><a href="ticketsAndpasses.html">Tickets & Passes</a></li>
-        <li><a href="#contactSection">Contact Us</a></li>
-      </ul>
-    </nav>
+    <div class="main-content-container" id="main-content-container">
+      <section class="home-explore-section">
+        <h1 class="section-title">Explore & Plan Your Visit</h1>
+        <div class="home-explore-container">
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- https://unsplash.com/photos/QLqIqIhMiNs by Chris Slupski  -->
+              <img
+                src="images/explore_rides.jpeg"
+                alt="Women and kids laughing while riding a roller coaster."
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Rides & Attractions</a>
+              <h3 class="card-subtitle">
+                Experience breath-taking attractions
+              </h3>
+              <p class="card-excerpt">
+                Over 40 rides and attractions, there is something for everyone
+                to enjoy at Adventure-park. Day ticket start from just $10
+                dollar per person when you book at least 1 day in advance.
+              </p>
+            </div>
+          </article>
 
-    <!-- Main content area -->
-    <h2 class="main-content-heading">Explore & Plan Your Visit</h2>
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- https://unsplash.com/photos/p6rNTdAPbuk by Kyle Head -->
+              <img
+                src="images/explore_shows.jpeg"
+                alt="Theater scenario with 3 people's silhouettes."
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Events & Shows</a>
+              <h3 class="card-subtitle">Year round of thrilliant events</h3>
+              <p class="card-excerpt">
+                Get ready for never-ending fun this season! Throughout 2022
+                Adventure-park will be hosting a fun-packed season of thrilliant
+                events and entertainment!
+              </p>
+            </div>
+          </article>
 
-    <div class="explore-items">
-      <article class="explore-grid-item">
-        <h3 class="article-card-title">Rides & Attractions</h3>
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- https://unsplash.com/photos/Ud6PcOtFuKU by Spencer Davis -->
+              <img
+                src="images/explore_food.jpeg"
+                alt="Table with served dishes, bread, dips and drinks."
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Restaurants & Dining</a>
+              <h3 class="card-subtitle">
+                Food and snacks varieties at its peak
+              </h3>
+              <p class="card-excerpt">
+                Explore our range of restaurants and dinning around the Park
+                like no other! Treat yourself to the best meals and snacks.
+              </p>
+            </div>
+          </article>
 
-        <!-- https://unsplash.com/photos/QLqIqIhMiNs by Chris Slupski  -->
-        <img
-          src="images/explore_rides.jpeg"
-          alt="Women and kids laughing while riding a roller coaster."
-        />
-        <div class="article-card-excerpt">
-          <span>Experience breath-taking attractions</span>
-          <p>
-            Over 40 rides and attractions, there is something for everyone to
-            enjoy at Adventure-park. Day ticket start from just $10 dollar per
-            person when you book at least 1 day in advance
-          </p>
-        </div>
-        <div class="article-card-read-more">
-          <a href="#">Learn More</a>
-        </div>
-      </article>
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- https://unsplash.com/photos/pBGIajkB1RM by 43 Clicks North -->
+              <img
+                src="images/explore_shops.jpeg"
+                alt="Woman walking between stands in a theme park."
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Shops & Park Services</a>
+              <h3 class="card-subtitle">
+                Shop with style, Parking Services are available
+              </h3>
+              <p class="card-excerpt">
+                With the varieties of Shops within our premises, you are granted
+                a pleasant shopping experience. Bring in your vehicle, our
+                parking services got you covered
+              </p>
+            </div>
+          </article>
 
-      <article class="explore-grid-item">
-        <h3 class="article-card-title">Events & Shows</h3>
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- https://unsplash.com/photos/jEOAOVq39Z4 by Tim Mossholder -->
+              <img
+                src="images/explore_open.jpeg"
+                alt="Wooden sign with the message Come In We're Open"
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Opening Hours</a>
+              <h3 class="card-subtitle">Open all year round</h3>
+              <p class="card-excerpt">
+                There’s so much going on at Adventure-park and there may be
+                different opening times for each activity.Explore our schedule
+                to find out more about our timing for various activities.
+              </p>
+            </div>
+          </article>
 
-        <!-- https://unsplash.com/photos/p6rNTdAPbuk by Kyle Head -->
-        <img
-          src="images/explore_shows.jpeg"
-          alt="Theater scenario with 3 people's silhouettes."
-        />
-        <div class="article-card-excerpt">
-          <span>Year round of Thrilliant Events</span>
-          <p>
-            Get ready for never-ending fun this season! Throughout 2022
-            Adventure-park will be hosting a fun-packed season of thrilliant
-            events and entertainment!
-          </p>
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- https://unsplash.com/photos/6gQjPGx1uQw by Jamie Templeton -->
+              <img
+                src="images/explore_direction.jpeg"
+                alt="Wooden fence with a sign saying This Way with an arrow to the right."
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">How to get to the park</a>
+              <h3 class="card-subtitle">Plan your journey</h3>
+              <p class="card-excerpt">
+                Before you travel, check out the very latest travel news online,
+                or use Google maps to find a route.
+              </p>
+            </div>
+          </article>
         </div>
-        <div class="article-card-read-more">
-          <a href="#">Find out More</a>
-        </div>
-      </article>
-
-      <article class="explore-grid-item">
-        <h3 class="article-card-title">Restaurants & Dining</h3>
-
-        <!-- https://unsplash.com/photos/Ud6PcOtFuKU by Spencer Davis -->
-        <img
-          src="images/explore_food.jpeg"
-          alt="Table with served dishes, bread, dips and drinks."
-        />
-        <div class="article-card-excerpt">
-          <span>Food and Snacks Varieties at its Peak</span>
-          <p>
-            Explore our range of restaurants and dinning around the Park like no
-            other! Treat yourself to the best meals and Snacks
-          </p>
-        </div>
-        <div class="article-card-read-more">
-          <a href="#">Find out More</a>
-        </div>
-      </article>
-
-      <article class="explore-grid-item">
-        <h3 class="article-card-title">Shops & Park Services</h3>
-
-        <!-- https://unsplash.com/photos/pBGIajkB1RM by 43 Clicks North -->
-        <img
-          src="images/explore_shops.jpeg"
-          alt="Woman walking between stands in a theme park."
-        />
-        <div class="article-card-excerpt">
-          <span>Shop with style, Parking Services are available </span>
-          <p>
-            With the varieties of Shops within our premises, you are granted a
-            pleasant shopping experience. Bring in your vehicle, our parking
-            services got you covered
-          </p>
-        </div>
-        <div class="article-card-read-more">
-          <a href="#">Learn More</a>
-        </div>
-      </article>
-
-      <article class="explore-grid-item">
-        <h3 class="article-card-title">Opening Hours</h3>
-        <!-- https://unsplash.com/photos/jEOAOVq39Z4 by Tim Mossholder -->
-        <img
-          src="images/explore_open.jpeg"
-          alt="Wooden sign with the message Come In We're Open"
-        />
-        <div class="article-card-excerpt">
-          <span>Open all Year round</span>
-          <p>
-            There’s so much going on at Adventure-park and there may be
-            different opening times for each activity.Explore our schedule to
-            find out more about our timing for various activities.
-          </p>
-        </div>
-        <div class="article-card-read-more">
-          <a href="#">Find out More</a>
-        </div>
-      </article>
-
-      <article class="explore-grid-item">
-        <h3 class="article-card-title">How To Get To The Park</h3>
-        <!-- https://unsplash.com/photos/6gQjPGx1uQw by Jamie Templeton -->
-
-        <img
-          src="images/explore_direction.jpeg"
-          alt="Wooden fence with a sign saying This Way with an arrow to the right."
-        />
-        <div class="article-card-excerpt">
-          <span>Plan Your Journey</span>
-          <p>
-            Before you travel, check out the very latest travel news online, or
-            use Google maps to find a route.
-          </p>
-        </div>
-        <div class="article-card-read-more">
-          <a href="#">Learn More</a>
-        </div>
-      </article>
+      </section>
     </div>
-    <!-- Footer area -->
-    <footer>
-      <div id="contactSection">
-        <address>
-          <span>Address:</span>
-          Amusement PARK <br />
-          2880 Broadway, <br />
-          New York, NY 10025, USA <br />
-          Email: info@amusement-park.cc
-          <br />Telephone: +447705014168
-        </address>
+
+    <!-- ----- FOOTER ----- -->
+    <footer class="footer">
+      <div class="footer-left">
+        <img src="/images/adventure_park_logo.png" alt="Adventure park logo" />
+        <p>
+          Adventure Park was founded in 2010 in the city of Bristol, England.
+          Since the very beginning it has captivated locals and tourists who
+          want to have the best time of your life. Since 2020 it is considered
+          the #1 Best Theme Park in the UK.
+        </p>
         <div class="social-media">
-          <h3>Contact Us</h3>
-          <h4>Social media</h4>
-          <a href=""
-            ><i
-              class="fab fa-facebook-square"
-              style="font-size: 24px; color: white"
-            ></i
-          ></a>
-          <a href=""
-            ><i
-              class="fab fa-twitter-square"
-              style="font-size: 24px; color: white"
-            ></i
-          ></a>
-          <a href=""
-            ><i class="fab fa-instagram" style="font-size: 24px; color: red"></i
-          ></a>
+          <a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+          <a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+          <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
         </div>
-        <div>
-          <a href="index.html#mapSection">Map & Direction</a>
-          <a href="#">back to Top</a>
-        </div>
+      </div>
+      <ul class="footer-right">
+        <li class="footer-explore">
+          <h3>Explore</h3>
+          <ul class="footer-column">
+            <li><a href="#">Rides & Attractions</a></li>
+            <li><a href="#">Events & Shows</a></li>
+            <li><a href="#">Restaurants & Dining</a></li>
+            <li><a href="#">Shops & Park Services</a></li>
+            <li><a href="#">Opening Hours</a></li>
+            <li><a href="#">How To Get To The Park</a></li>
+          </ul>
+        </li>
+        <li class="footer-tickets">
+          <h3>Tickets & Passes</h3>
+          <ul class="footer-column">
+            <li><a href="#">Annual Pass</a></li>
+            <li><a href="#">1-Day Ticket</a></li>
+            <li><a href="#">2-Day Ticket</a></li>
+            <li><a href="#">Student Ticket</a></li>
+            <li><a href="#">Group Ticket</a></li>
+            <li><a href="#">VIP Experience</a></li>
+          </ul>
+        </li>
+        <li class="footer-address">
+          <h3>Address</h3>
+          <ul class="footer-column">
+            <li><a href="#">123, Web Dev Street</a></li>
+            <li><a href="#">BS34 7QQ, Filton</a></li>
+            <li><a href="#">Bristol</a></li>
+            <li><a href="#">England</a></li>
+            <li><a href="#">United Kingdom</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer-legal">
+        <p>2022 Adventure Park Enterteinment. All rights reserved.</p>
       </div>
     </footer>
   </body>
