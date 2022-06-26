@@ -368,17 +368,32 @@ footer {
 
 .social-media a {
   background: #9ba2ff;
+  color: #211c5b;
+  font-weight: 800;
   width: 40px;
   height: 40px;
   display: inline-block;
   margin-right: 10px;
+  overflow: hidden;
   border-radius: 5px;
+  transition: all 0.25s ease-out;
+}
+
+.social-media a:hover {
+  width: 120px;
+  font-weight: 800;
 }
 
 .social-media a i {
   color: #211c5b;
   padding: 10px 12px;
   font-size: 20px;
+}
+
+.social-media a span {
+  font-size: 14px;
+  line-height: 60px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 600px) {
