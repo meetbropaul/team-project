@@ -158,6 +158,12 @@ header {
   gap: 18rem;
 }
 
+.tickets-passes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
 .article-image {
   margin: 0;
   padding: 0;
