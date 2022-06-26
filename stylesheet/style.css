@@ -6,6 +6,8 @@
 
 body {
   background: #f0f4fb;
+  min-width: 1200px;
+  max-width: 1900px;
 }
 
 #book-now-cta button {
