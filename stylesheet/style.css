@@ -1,408 +1,417 @@
 * {
   box-sizing: border-box;
-  font-family: Lato, Helvetica, sans-serif;
-}
-
-html {
-  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  background: #f0f4fb;
+  min-width: 1200px;
+  max-width: 1900px;
+}
+
+#book-now-cta button {
+  height: 125px;
+  margin-left: 30px;
+  margin-right: 0px;
+  padding: 9px 25px;
+  background-color: #fcaf1e;
+  color: #211c5b;
+  border: none;
+  cursor: pointer;
+}
+
+#card-buy-cta {
+  height: 80px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fcaf1e;
+  color: #211c5b;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links li,
+a,
+button {
+  font-family: "Lustria", serif;
+  font-weight: 800;
+  font-size: 26px;
+  color: #fff;
+  text-decoration: none;
 }
 
 header {
-  background-color: #211c5b;
-  height: 5rem;
-}
-
-header * {
-  margin: 0;
-}
-
-.openingHours {
-  float: left;
-  font-size: 1.2rem;
-  color: white;
-  margin-right: 6rem;
-}
-
-.openingHours p {
-  line-height: 1.5rem;
-  padding: 1rem;
-}
-
-header img {
-  float: left;
-  width: 100px;
-  height: 80px;
-  border-radius: 50%;
-  padding: 5px;
-}
-
-header h1 {
-  float: left;
-  margin-top: 2rem;
-  margin-left: 0.2rem;
-  color: whitesmoke;
-}
-
-header a {
-  text-decoration: none;
-  background-color: #d10017;
-  color: white;
-  padding: 1.8rem;
-  float: right;
-  font-size: 1.2rem;
-}
-
-nav {
-  clear: both;
-  width: 98%;
-  margin: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 1.8rem;
-}
-
-nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0rem;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #211c5b;
 }
 
-nav li {
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  margin-left: 2.5%;
+  height: auto;
+  width: auto;
+  max-height: 125px;
+  max-width: 250px;
+  line-height: 125px;
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
   display: inline-block;
+  padding: 0px 20px;
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
+.nav-links li a {
+  transition: all 0.3s ease 0s;
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-links li a:hover {
+  color: #4754ff;
 }
 
-/* Animation Section CSS */
-.dashboard {
-  width: 98%;
-  margin-left: 0.5rem;
-  margin-bottom: 0;
-  height: 10rem;
-  background-color: #11aad4;
-  color: red;
-  padding-top: 2rem;
-  overflow: hidden;
-}
-
-.container {
-  height: 50%;
-  width: 180%;
-  overflow: hidden;
+.hero {
   position: relative;
-  text-overflow: clip;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
-
-.dashboard h1 {
+.hero::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  text-align: left;
-  animation: scroll-text 30s linear;
-  animation-iteration-count: infinite;
-  color: red;
-  text-shadow: -2px 0 cornsilk, 0 2px cornsilk, 2px 0 cornsilk, 0 -2px cornsilk;
+  background: url(../images/home_hero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
 }
 
-@keyframes scroll-text {
-  0% {
-    transform: translateX(54.5%);
-  }
-  100% {
-    transform: translateX(-80%);
-  }
-}
-
-.dashboard span {
-  margin-left: 25rem;
-}
-
-/* Home page content section CSS */
-.homepageContents {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 98%;
-  margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.homepageContents .contentThumbnail {
-  width: 33%;
-  height: 45rem;
-  margin-bottom: 2rem;
-}
-
-.homepageContents div:last-child {
-  width: 66%;
-}
-
-.homepageContents .contentThumbnail img {
-  width: 100%;
-  height: 56%;
-}
-
-.homepageContents .contentThumbnailHeading {
-  height: 14%;
-}
-
-.homepageContents .contentThumbnailHeading h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.homepageContents .contentThumbnailHeading h3 {
-  margin: 0;
-}
-.homepageContents .contentThumbnail p {
-  font-size: 1.2rem;
-  height: 18%;
-}
-
-.contentThumbnail a {
-  text-decoration: none;
-  background-color: #11aad4;
-  color: white;
-  padding: 0.8rem 3rem;
-  font-size: 1.2rem;
-  border-radius: 0.5rem;
-}
-
-.contentThumbnail a:hover {
-  background-color: #c43041;
-}
-
-/* Contact Section CSS */
-#contactSection {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  margin-bottom: 4rem;
-  background-color: #211c5b;
-  color: white;
-  font-size: 1.2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-}
-
-#contactSection * {
-  padding-left: 0.5rem;
-}
-
-#contactSection div:last-child a {
-  display: block;
-  color: white;
-  padding: 1rem;
-  margin-bottom: 0.8rem;
-  margin-right: 0.5rem;
-  font-size: 1.3rem;
-}
-
-#contactSection div:last-child a:hover {
-  color: red;
-}
-
-/* style for google map  */
-.mapouter {
+.hero-content {
   position: relative;
-  text-align: right;
-  width: 100%;
+  font-family: "Rammetto One", cursive;
+  color: white;
+  text-align: left;
+  margin: 0.625rem;
+  margin-left: 2.5%;
 }
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 100%;
-address span {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1.3rem;
-  padding-top: 1rem;
-}
-
-/* Map section CSS */
-#mapSection > h2 {
-  margin-left: 0.8rem;
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
   margin-bottom: 0;
-  padding: 1rem;
+}
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 1rem;
 }
 
-.direction {
-  font-size: 1.2rem;
+.section-title {
+  font-family: "Rammetto One", cursive;
+  font-weight: 800;
+  font-size: 100%;
+  font-size: 32px;
+  line-height: 2;
+  color: #211c5b;
+  padding: 10px 0px 10px 0px;
+}
+
+.card-title {
+  font-family: "Lustria", serif;
+  font-weight: 600;
+  font-size: 100%;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #211c5b;
+}
+
+.main-content-container {
+  margin: 2rem auto;
+  max-width: calc(100% - 80px);
+}
+
+.main-content-container section {
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.home-explore-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.home-tickets-container {
+  margin: 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 18rem;
+}
+
+.tickets-passes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.article-image img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  border-radius: 20px 20px 0 0;
+}
+
+.article-card {
+  background: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+  cursor: pointer;
+}
+
+.article-content {
   padding: 2rem;
 }
 
-/* Defining CSS rule specific to Tickets and Passes Page */
-
-.ticketLabel h2 {
-  width: 98%;
-  margin: auto;
-  margin-top: 3rem;
-/* style for google map  */
-.mapouter {
-  position: relative;
-  text-align: right;
-  width: 100%;
-}
-
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  width: 100%;
-}
-
-iframe {
-  width: 100%;
-  height: 800px;
-}
-
-/* Defining CSS rule specific to Explore Page */
-
-/*.main-contain-heading shares the same rule as heading in ticket & pass CSS section */
-
-
-  /* class .explore-item share the same rule as class .ticketAndPassesContents */
-
-
-article.explore-grid-item {
-  /* same rule as class .ticketAndPassesContents .contentThumbnail */
-  height: 40rem;
-  margin-bottom: 5rem;
-}
-
-.explore-grid-item img {
-  height: 63%;
-  width: 100%;
-}
-
-.article-card-title,
-.article-card-read-more {
-  background: #211c5b;
-  color: #fff;
-  width: 100%;
-  padding: 10px;
-  margin: 0px;
-}
-
-.article-card-excerpt {
-  margin-top: 0.3rem;
-  height: 22%;
-}
-
-.article-card-excerpt span:first-child {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.article-card-read-more a {
-  text-decoration: none;
-  color: white;
-}
-
-.article-card-read-more a:hover {
-  text-decoration: underline;
-}
-
-/* Defining CSS rule specific to Tickets and Passes Page */
-
-.heading h2,
-.main-content-heading {
-  width: 100%;
-  margin: auto;
-  margin-bottom: 0;
-  background-color: #11aad4;
-  color: red;
-  padding: 0.8rem;
-  text-align: center;
-}
-
-.ticketAndPassesContents,
-.explore-items {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0.3rem 0.6rem;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-.ticketAndPassesContents .contentThumbnail,
-.explore-grid-item {
-  width: 33%;
-  margin: 0rem;
-  margin-bottom: 0rem;
-  height: 58rem;
-}
-
-.ticketAndPassesContents .contentThumbnail:last-child {
-  width: 66%;
-}
-
-.ticketTypes {
-  display: flex;
-  flex-wrap: wrap;
-  height: 12%;
-}
-
-.ticketTypes * {
-  margin-top: 0.08rem;
-  text-align: center;
-  margin-bottom: 0.2rem;
-  padding-top: 0.5rem;
-}
-
-.ticketTypes h3 {
-  width: 100%;
-  color: white;
-  background-color: #211c5b;
-}
-
-.ticketTypes h4 {
-  width: 50%;
-  border: 2px solid;
-}
-
-.ticketTypes h4:last-child {
-  border-left: none;
-}
-
-.ticketTypes span {
+.article-content .card-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 600;
+  color: #211c5b;
+  display: block;
+  text-decoration: none;
+}
+
+.article-content .card-type {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #211c5b;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.article-content .card-subtitle {
+  margin: 1rem 0;
+  color: #4754ff;
+}
+
+.article-content .card-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #207507;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.article-card .card-excerpt {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #706c8f;
+  margin: 0;
+}
+
+/* TO-DO: UPDATE THIS A BIT */
+/* https://codepen.io/jeremycaris/pen/zYOorR */
+.home-testimonial-section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #1a1a1a;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  text-align: center;
+  background: #757f9a;
+  background: -webkit-linear-gradient(to left, #d7dde8, #757f9a);
+  background: linear-gradient(to left, #d7dde8, #757f9a);
+}
+
+.home-testimonial-container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.testimonial blockquote {
+  margin: 10px 10px 0;
+  background: #efefef;
+  padding: 20px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
   font-style: italic;
 }
 
-.ticketAndPassesContents img {
-  width: 100%;
-  height: 43%;
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  color: #757f9a;
+  font-style: normal;
 }
 
-.ticketAndPassesContents .heading {
-  height: 10%;
+.testimonial blockquote:before {
+  top: 0;
+  left: 10px;
 }
 
-.ticketAndPassesContents ul {
-  height: 20%;
-  margin-bottom: 0;
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
 }
 
-.ticketAndPassesContents a {
-  display: block;
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+  margin: 0 0 0 60px;
+}
+
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.testimonial .stars {
+  font-size: 25px;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px 50px 15px 50px;
+  color: #edebf7;
+  background-color: #211c5b;
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.footer-left {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer-left img {
+  width: 50%;
+  padding-left: 20%;
+}
+
+.footer h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-right {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-right > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.footer-column a {
+  color: #9ba2ff;
+}
+
+.footer-legal {
   text-align: center;
+  font-size: 16px;
+  color: #edebf7;
+}
+
+.footer-left p {
+  padding-right: 20%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #edebf7;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.social-media a {
+  background: #9ba2ff;
+  color: #211c5b;
+  font-weight: 800;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.25s ease-out;
+}
+
+.social-media a:hover {
+  width: 150px;
+  font-weight: 800;
+}
+
+.social-media a i {
+  color: #211c5b;
+  padding: 10px 12px;
+  font-size: 20px;
+}
+
+.social-media a span {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-right > * {
+    flex: 1;
+  }
+  .footer-left {
+    flex: 1 0px;
+  }
+  .footer-right {
+    flex: 2 0px;
+  }
 }

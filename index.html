@@ -19,7 +19,7 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adventure Park- Home Page</title>
+    <title>Adventure Park - Home</title>
 
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="stylesheet/style.css" />
@@ -35,276 +35,211 @@
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lustria&family=Rammetto+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header section -->
     <header>
-      <div class="openingHours">
-        <p>
-          Opening Hours <br />
-          <span>From <time>08:00</time> to <time>22:00</time></span>
-        </p>
+      <img class="logo" src="images/adventure_park_logo.png" alt="Logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./explore.html">Explore</a></li>
+          <li><a href="./ticketsAndpasses.html">Tickets & Passes</a></li>
+        </ul>
+      </nav>
+      <div class="boton">
+        <a id="book-now-cta" href="#">
+          <button>Book Now</button>
+        </a>
       </div>
-
-      <img src="images/park-logo.png" alt="park-logo" width="75" height="60" />
-      <h1>Adventure Park</h1>
-      <a href="ticketsAndpasses.html">Buy tickets</a>
     </header>
 
-    <!-- Navigation section -->
-    <nav>
-      <ul>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="ticketsAndpasses.html">Tickets & Passes</a></li>
-        <li><a href="#contactSection">Contact Us</a></li>
-      </ul>
-    </nav>
-
-    <!-- Animation section -->
-    <div class="dashboard">
-      <div class="container">
-        <h1>
-          Welcome to Adventure-park <span>We give you the Best Thrills</span
-          ><span>Relax and Have Fun</span>
-        </h1>
+    <!-- ----- HERO -----  -->
+    <!-- Hero image by Scott Trento https://unsplash.com/photos/mUFFI4CkmAI -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">ADVENTURE PARK</h1>
+        <h2>Where all the fun happens!</h2>
       </div>
+    </section>
+    <!-- ----- END OF HERO -----  -->
+
+    <div class="main-content-container" id="main-content-container">
+      <section class="home-explore-section">
+        <h1 class="section-title">Explore our rides</h1>
+        <div class="home-explore-container">
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- Image by Lisa Yount https://unsplash.com/photos/y5aAQzbEzXI -->
+              <img
+                src="images/home_pendulum.jpeg"
+                alt="Star Dancer pendulum ride"
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Star Dancer</a>
+              <h3 class="card-subtitle">
+                Spin, swing and reach for the skies on the Star Dancer
+              </h3>
+              <p class="card-excerpt">
+                Experience 15 high speed rotations per minute on Star Dancer, a
+                giant pendulum that spins and swings riders through the air.
+                Reach 65ft and experience cyclonic forces on this mechanical
+                giant.
+              </p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- Image by Ian Romie Ona https://unsplash.com/photos/x6QdZQkuroI -->
+              <img src="images/home_roller_coaster.jpeg" alt="Roller coaster" />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">The Swarm</a>
+              <h3 class="card-subtitle">
+                Speed, twist and loop on the Swarm's exhilarating rides
+              </h3>
+              <p class="card-excerpt">
+                Experience speeds of almost 100km/h as you ride on the wings of
+                The Swarm. Take your seat either side of the track and feel the
+                force of 4.5G, with nothing above or below you but air!
+              </p>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- Image by Ethan Hoover https://unsplash.com/photos/zyU2gQ9mWLM -->
+              <img src="images/home_swing_ride.jpeg" alt="Swing ride" />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-title">Swing ride</a>
+              <h3 class="card-subtitle">
+                Spinning and swirling Storm Chaser while onboard the Coaster
+              </h3>
+              <p class="card-excerpt">
+                Coaster features a crazy mix of thrilling drops, exhilarating
+                spirals, amazing turns and breath-taking 'camel humps'.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="home-tickets-section">
+        <h1 class="section-title">Check our tickets & passes</h1>
+        <div class="home-tickets-container">
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- Image by Perry Merrity II https://unsplash.com/photos/UmPS8Zf6FB0 -->
+              <img
+                src="images/home_year_tickets.jpeg"
+                alt="Star Dancer pendulum ride"
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-type">Annual Pass</a>
+              <h2 class="card-price">$ 10/mo</h2>
+              <a href="#">
+                <button id="card-buy-cta">Buy Now</button>
+              </a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <figure class="article-image">
+              <!-- Image by Joe Yates https://unsplash.com/photos/8LJViXSE_V8 -->
+              <img
+                src="images/home_day_tickets.jpeg"
+                alt="Star Dancer pendulum ride"
+              />
+            </figure>
+            <div class="article-content">
+              <a href="#" class="card-type">Day Ticket</a>
+              <h2 class="card-price">$ 49.99</h2>
+              <a href="#">
+                <button id="card-buy-cta">Buy Now</button>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
     </div>
-
-    <!-- Contents -->
-    <div class="homepageContents">
-      <div class="contentThumbnail">
-        <img
-          src="images/pexels-yuri-catalano-2431847.jpg"
-          alt="roller-coster-image-1"
-        />
-        <div class="contentThumbnailHeading">
-          <h2>Vortex</h2>
-          <h3>Spin, swing and reach for the skies on Vortex</h3>
+    <section class="home-testimonial-section">
+      <div class="home-testimonial-container">
+        <div class="testimonial">
+          <h4 class="stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</h4>
+          <blockquote>
+            The park is amazing. I had the opportunity to enjoy a season pass
+            with my family and I can't wait to repeat it. My children couldn't
+            stop trying all the different rides, we had a lot of fun! And it was
+            great to also have a chance to chill and enjoy a nice restaurant
+            with my wife. 100% recommended!
+          </blockquote>
+          <div></div>
+          <p>Paul Severo - Montevideo, NG</p>
         </div>
-
-        <p>
-          Experience 15 high speed rotations per minute on Vortex, a giant
-          pendulum that spins and swings riders through the air. Reach 65ft and
-          experience cyclonic forces on this mechanical giant.
-        </p>
-
-        <a href="">Book Now</a>
       </div>
+    </section>
 
-      <div class="contentThumbnail">
-        <img
-          src="images/pexels-dana-cetojevic-3888315.jpg"
-          alt="roller-coster-image-2"
-        />
-        <div class="contentThumbnailHeading">
-          <h2>The Swarm</h2>
-          <h3>Speed, twist and loop on the Swarm's exhilarating rides</h3>
-        </div>
-
+    <!-- ----- FOOTER ----- -->
+    <footer class="footer">
+      <div class="footer-left">
+        <img src="images/adventure_park_logo.png" alt="Adventure park logo" />
         <p>
-          Experience speeds of almost 100km/h as you ride on the wings of The
-          Swarm. Take your seat either side of the track and feel the force of
-          4.5G, with nothing above or below you but air!
+          Adventure Park was founded in 2010 in the city of Bristol, England.
+          Since the very beginning it has captivated locals and tourists who
+          want to have the best time of their life. Since 2020 it is considered
+          the #1 Best Theme Park in the UK.
         </p>
-
-        <a href="">Book Now</a>
-      </div>
-
-      <div class="contentThumbnail">
-        <img
-          src="images/pexels-min-an-749061.jpg"
-          alt="roller-coster-image-3"
-        />
-
-        <div class="contentThumbnailHeading">
-          <h2>Coaster</h2>
-          <h3>Spinning and swirling Storm Chaser while onboard the Coaster</h3>
-        </div>
-        <p>
-          Coaster features a crazy mix of thrilling drops, exhilarating spirals,
-          amazing turns and breath-taking 'camel humps'.
-        </p>
-
-        <a href="">Book Now</a>
-      </div>
-
-      <div class="contentThumbnail">
-        <!-- https://unsplash.com/photos/Ud6PcOtFuKU by Spencer Davis -->
-        <img
-          src="images/explore_food.jpeg"
-          alt="Table with served dishes, bread, dips and drinks."
-        />
-        <div class="contentThumbnailHeading">
-          <h2>Restaurants & Dining</h2>
-          <h3>Food and Snacks Varieties at its Peak</h3>
-        </div>
-
-        <p>
-          Explore our range of restaurants and dinning around the Park like no
-          other! Treat yourself to the best meals and Snacks
-        </p>
-
-        <a href="">Find out more</a>
-      </div>
-
-      <div class="contentThumbnail">
-        <!-- https://unsplash.com/photos/p6rNTdAPbuk by Kyle Head -->
-        <img
-          src="images/explore_shows.jpeg"
-          alt="Theater scenario with 3 people's silhouettes."
-        />
-        <div class="contentThumbnailHeading">
-          <h2>Events & Shows</h2>
-          <h3>Year round of Thrilliant Events</h3>
-        </div>
-
-        <p>
-          Get ready for never-ending fun this season! Throughout 2022
-          Adventure-park will be hosting a fun-packed season of thrilliant
-          events and entertainment!
-        </p>
-
-        <a href="">Learn more</a>
-      </div>
-
-      <div class="contentThumbnail">
-        <!-- https://unsplash.com/photos/pBGIajkB1RM by 43 Clicks North -->
-        <img
-          src="images/explore_shops.jpeg"
-          alt="Woman walking between stands in a theme park."
-        />
-        <div class="contentThumbnailHeading">
-          <h2>Shops & Park Services</h2>
-          <h3>Shop with style, Parking Services are available</h3>
-        </div>
-
-        <p>
-          With the varieties of Shops within our premises, you are granted a
-          pleasant shopping experience. Bring in your vehicle, our parking
-          services got you covered
-        </p>
-
-        <a href="">Learn more</a>
-      </div>
-
-      <div class="contentThumbnail">
-        <img
-          src="images/pexels-praphaphan-wongsawan-2350518.jpg"
-          alt="rotating-horse-ride-image"
-        />
-
-        <div class="contentThumbnailHeading">
-          <h2>Roller-Hopper</h2>
-          <h3>Galloping, turning and cruising along on the Roller-Hopper</h3>
-        </div>
-
-        <p>
-          Hop on the Roller-Hopper, this ride is sure to make you happy as it
-          features sensational soundtrack amid a soothing and relaxing loops
-        </p>
-
-        <a href="">Book Now</a>
-      </div>
-
-      <div class="contentThumbnail">
-        <img src="images/pexels-pixabay-261429.jpg" alt="water-thrill-image" />
-
-        <div class="contentThumbnailHeading">
-          <h2>Water Thrill</h2>
-          <h3>Soaking wet fun! You do not want to miss this Pool Adventure</h3>
-        </div>
-        <p>
-          When it’s time to cool off, head to Depth Charge water thrill for some
-          fun for every member of the family with a race down our super slide.
-          You'll be talking about memories made with your crew after bonding
-          over these exciting water adventure!
-        </p>
-
-        <a href="">Book Now</a>
-      </div>
-    </div>
-
-    <!-- footer section -->
-    <footer>
-      <div id="contactSection">
-        <address>
-          <span>Address:</span>
-          Adventure Park <br />
-          2880 Broadway, <br />
-          New York, NY 10025, USA <br />
-          Email: info@Adventure-park.cc
-          <br />Telephone: +447705014168
-        </address>
         <div class="social-media">
-          <h3>Contact Us</h3>
-          <h4>Social media</h4>
-          <a href=""
-            ><i
-              class="fab fa-facebook-square"
-              style="font-size: 24px; color: white"
-            ></i
-          ></a>
-          <a href=""
-            ><i
-              class="fab fa-twitter-square"
-              style="font-size: 24px; color: white"
-            ></i
-          ></a>
-          <a href=""
-            ><i class="fab fa-instagram" style="font-size: 24px; color: red"></i
-          ></a>
-        </div>
-
-        <div>
-          <a href="#mapSection">Map & Direction</a>
-          <a href="#">back to Top</a>
+          <a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+          <a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+          <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
         </div>
       </div>
-
-      <!-- Map section -->
-      <div id="mapSection">
-        <h2>Location on the Map</h2>
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            ></iframe>
-          </div>
-        </div>
-
-        <!-- Direction section -->
-        <div class="direction">
-          <h2>Direction to Adventure-park</h2>
-          <h3>By Car</h3>
-          <p>
-            You can find Adventure-park at the following address:
-            <br />Adventure-park <br />2880 Broadway, New York,NY 10025,USA
-            <br />
-            <br />
-            Adventure-park is located between the M1 and the M6 and is well
-            signposted from both motorways. Depending on your direction, the
-            nearest motorway exits are: M1 Northbound – Junction 23a <br />M1
-            Southbound – Junction 28 <br />M6 Northbound – Junction 15 <br />M6
-            Southbound – Junction 16
-          </p>
-          <br /><br />
-          <h3>By Train</h3>
-          <p>
-            Visitors can travel to Adventure Park by train, via several popular
-            destinations. Visit <a href="">thetrainline.com</a> to search for
-            train times and prices. <br />
-            <br />
-
-            Uttoxeter Train Station: <br />
-            Uttoxeter station is the nearest train station to Fountain Towers,
-            just 10 miles from the resort. Uttoxeter station is just a 20 minute
-            drive away from the resort or 30 minutes by bus. <br /><br />
-            Stoke on Trent Station: <br />
-            Stoke on Trent rail station is 15 miles from Adventure Park. A local
-            taxi would take around 25 minutes to the resort.
-          </p>
-        </div>
+      <ul class="footer-right">
+        <li class="footer-explore">
+          <h3>Explore</h3>
+          <ul class="footer-column">
+            <li><a href="#">Rides & Attractions</a></li>
+            <li><a href="#">Events & Shows</a></li>
+            <li><a href="#">Restaurants & Dining</a></li>
+            <li><a href="#">Shops & Park Services</a></li>
+            <li><a href="#">Opening Hours</a></li>
+            <li><a href="#">How To Get To The Park</a></li>
+          </ul>
+        </li>
+        <li class="footer-tickets">
+          <h3>Tickets & Passes</h3>
+          <ul class="footer-column">
+            <li><a href="#">Annual Pass</a></li>
+            <li><a href="#">1-Day Ticket</a></li>
+            <li><a href="#">2-Day Ticket</a></li>
+            <li><a href="#">Student Ticket</a></li>
+            <li><a href="#">Group Ticket</a></li>
+            <li><a href="#">VIP Experience</a></li>
+          </ul>
+        </li>
+        <li class="footer-address">
+          <h3>Address</h3>
+          <ul class="footer-column">
+            <li><a href="#">123, Web Dev Street</a></li>
+            <li><a href="#">BS34 7QQ, Filton</a></li>
+            <li><a href="#">Bristol</a></li>
+            <li><a href="#">England</a></li>
+            <li><a href="#">United Kingdom</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="footer-legal">
+        <p>2022 Adventure Park Enterteinment. All rights reserved.</p>
       </div>
     </footer>
   </body>
