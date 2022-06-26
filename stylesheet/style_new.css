@@ -27,6 +27,7 @@ body {
   background-color: #fcaf1e;
   color: #211c5b;
   border: none;
+  cursor: pointer;
 }
 
 .nav-links li,
