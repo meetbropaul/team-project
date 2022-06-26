@@ -93,10 +93,7 @@ a:hover {
   margin-bottom: 0;
   height: 10rem;
   background-color: #11aad4;
-<<<<<<< HEAD
   color: red;
-=======
->>>>>>> origin/paul
   padding-top: 2rem;
   overflow: hidden;
 }
@@ -219,7 +216,6 @@ a:hover {
   color: red;
 }
 
-<<<<<<< HEAD
 /* style for google map  */
 .mapouter {
   position: relative;
@@ -231,7 +227,6 @@ a:hover {
   overflow: hidden;
   background: none !important;
   width: 100%;
-=======
 address span {
   display: block;
   font-size: 1.5rem;
@@ -245,7 +240,6 @@ address span {
   margin-left: 0.8rem;
   margin-bottom: 0;
   padding: 1rem;
->>>>>>> origin/paul
 }
 
 .direction {
@@ -253,14 +247,12 @@ address span {
   padding: 2rem;
 }
 
-<<<<<<< HEAD
 /* Defining CSS rule specific to Tickets and Passes Page */
 
 .ticketLabel h2 {
   width: 98%;
   margin: auto;
   margin-top: 3rem;
-=======
 /* style for google map  */
 .mapouter {
   position: relative;
@@ -334,7 +326,6 @@ article.explore-grid-item {
 .main-content-heading {
   width: 100%;
   margin: auto;
->>>>>>> origin/paul
   margin-bottom: 0;
   background-color: #11aad4;
   color: red;
@@ -342,12 +333,8 @@ article.explore-grid-item {
   text-align: center;
 }
 
-<<<<<<< HEAD
-.ticketAndPassesContents {
-=======
 .ticketAndPassesContents,
 .explore-items {
->>>>>>> origin/paul
   display: flex;
   flex-wrap: wrap;
   margin: 0.3rem 0.6rem;
@@ -355,18 +342,11 @@ article.explore-grid-item {
   margin-top: 2rem;
 }
 
-<<<<<<< HEAD
-.ticketAndPassesContents .contentThumbnail {
-  width: 33%;
-  margin: 0rem;
-  margin-bottom: 5rem;
-=======
 .ticketAndPassesContents .contentThumbnail,
 .explore-grid-item {
   width: 33%;
   margin: 0rem;
   margin-bottom: 0rem;
->>>>>>> origin/paul
   height: 58rem;
 }
 
