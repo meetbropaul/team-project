@@ -301,7 +301,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   padding: 50px 50px 15px 50px;
-  color: #fff;
+  color: #edebf7;
   background-color: #211c5b;
 }
 
@@ -349,26 +349,26 @@ footer {
 }
 
 .footer-column a {
-  color: #4754ff;
+  color: #9ba2ff;
 }
 
 .footer-legal {
   text-align: center;
   font-size: 16px;
-  color: #757f9a;
+  color: #edebf7;
 }
 
 .footer-left p {
   padding-right: 20%;
   padding-top: 10px;
   padding-bottom: 20px;
-  color: #757f9a;
+  color: #edebf7;
   text-align: justify;
   font-size: 16px;
 }
 
 .social-media a {
-  background: #4754ff;
+  background: #9ba2ff;
   color: #211c5b;
   font-weight: 800;
   width: 40px;
