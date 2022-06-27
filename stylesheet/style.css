@@ -10,7 +10,7 @@ body {
   max-width: 1900px;
 }
 
-#book-now-cta button {
+#book-now-cta {
   height: 125px;
   margin-left: 30px;
   margin-right: 0px;
@@ -19,17 +19,19 @@ body {
   color: #211c5b;
   border: none;
   cursor: pointer;
+  padding-top: 45px;
 }
 
-#card-buy-cta {
+.card-buy-cta {
   height: 80px;
   width: 100%;
-  margin: 0px;
-  padding: 0px;
   background-color: #fcaf1e;
   color: #211c5b;
   border: none;
   cursor: pointer;
+  display: block;
+  text-align: center;
+  padding-top: 22px;
 }
 
 .nav-links li,
@@ -61,6 +63,7 @@ header {
   vertical-align: middle;
 }
 
+/* NAVIGATION LINKS */
 .nav-links {
   list-style: none;
 }
@@ -78,6 +81,7 @@ header {
   color: #4754ff;
 }
 
+/* HERO SECTION */
 .hero {
   position: relative;
   width: 100vw;
@@ -119,6 +123,7 @@ header {
   margin-top: 1rem;
 }
 
+/* MAIN CONTENT SECTION */
 .section-title {
   font-family: "Rammetto One", cursive;
   font-weight: 800;
@@ -235,7 +240,7 @@ header {
   margin: 0;
 }
 
-/* TO-DO: UPDATE THIS A BIT */
+/* TESTIMONIAL SECTION */
 /* https://codepen.io/jeremycaris/pen/zYOorR */
 .home-testimonial-section {
   padding-top: 15px;
@@ -305,7 +310,7 @@ header {
   font-size: 25px;
 }
 
-/* ----- FOOTER ----- */
+/* ----- FOOTER SECTION ----- */
 footer {
   display: flex;
   flex-flow: row wrap;
@@ -376,6 +381,7 @@ footer {
   font-size: 16px;
 }
 
+/* SOCIAL MEDIA AND TRANSITION CSS */
 .social-media a {
   background: #9ba2ff;
   color: #211c5b;
